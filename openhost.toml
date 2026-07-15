@@ -9,6 +9,7 @@ port = 8080
 
 [routing]
 health_check = "/health"
+public_paths = ["/", "/health"]
 
 [[services.v2.consumes]]
 service = "github.com/boweiliu/openhost-test-services/accumulator"
